@@ -1,3 +1,4 @@
+CSS
 /* Link of poppins font from google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
@@ -23,9 +24,26 @@ img {
   max-width: 100%;
 }
 
+/* Center all elements horizontally */
 .container {
-  max-width: 600px;
   margin: 0 auto;
+  text-align: center;
+}
+
+/* Add line breaks between rows */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label,
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
 }
 
 .logoHome {
@@ -35,19 +53,13 @@ img {
   margin: 50px auto;
 }
 
-.form-group {
-  display: grid;
-  grid-gap: 5px;
-  margin-bottom: 10px;
-}
-
 .form-group label {
-  font-weight: 400; /* Adjusted font weight to match body text */
+  font-weight: 500;
 }
 
 .form-group input,
-.form-group select,
-.form-group textarea {
+select,
+textarea {
   padding: 8px;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -57,7 +69,6 @@ img {
   -o-border-radius: 5px;
   outline: none;
   width: 100%;
-  align-self: center; /* Aligned labels and input fields vertically */
   &:focus {
     border-color: #d7282f;
   }
@@ -74,7 +85,8 @@ img {
   outline: none;
   cursor: pointer;
   width: 100%;
-  margin: 20px 0; /* Applied consistent margin around button */
+  margin-top: 20px;
+  /* margin-bottom: 50px; */
   &:active {
     transform: scale(0.98);
     -webkit-transform: scale(0.98);
@@ -84,6 +96,14 @@ img {
   }
 }
 
-.form-group select {
-  width: 80%; /* Adjusted width for better alignment */
+.submit {
+  color: #fff;
+  background-color: #d7282f;
+  border-color: #d7282f;
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: auto 200px;
+  grid-gap: 10px;
 }
