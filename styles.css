@@ -1,5 +1,5 @@
 /* Link of poppins font from google font */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -79,19 +79,4 @@ textarea {
     transform: scale(0.98);
     -webkit-transform: scale(0.98);
     -moz-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    -o-transform: scale(0.98);
-  }
-}
-
-.submit {
-  color: #fff;
-  background-color: #d7282f;
-  border-color: #d7282f;
-}
-
-.groups {
-  display: grid;
-  grid-template-columns: auto 200px;
-  grid-gap: 10px;
-  
+    -ms-transform: scale(0
