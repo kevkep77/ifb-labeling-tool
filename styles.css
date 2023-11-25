@@ -1,0 +1,200 @@
+/* Link of poppins font from google font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.logoHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+.form-group {
+  display: grid;
+  grid-gap: 5px;
+  margin-bottom: 10px;
+}
+.form-group label {
+  font-weight: 500;
+}
+.form-group input,
+select,
+textarea {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  width: 100%;
+  &:focus {
+    border-color: #d7282f;
+  }
+}
+.btn {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  /* margin-bottom: 50px; */
+  &:active {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+  }
+}
+.submit {
+  color: #fff;
+  background-color: #d7282f;
+  border-color: #d7282f;
+}
+.groups {
+  display: grid;
+  grid-template-columns: auto 200px;
+  grid-gap: 10px;
+  align-items: center;
+}
+select#weightSelect {
+  margin-top: 15px;
+}
+
+.btn-preview {
+  color: #fff;
+  background-color: #28abd7;
+  border-color: #28abd7;
+  margin-bottom: 50px;
+}
+
+/* Preview page styles */
+
+.actions {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actions div {
+  text-align: center;
+}
+.actions div p,
+label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.actions div span {
+  color: green;
+}
+.inputsOfResize {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.addNew {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  background-color: #28abd7;
+  border-color: #28abd7;
+}
+
+.printablePart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 20px;
+  width: 100%;
+  padding: 20px;
+}
+.info-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.info-card > h2 {
+  text-align: center;
+}
+.info-card > p {
+  text-align: center;
+}
+.card-main-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.card-right {
+  display: grid;
+  justify-content: end;
+}
+.delete-button {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  background: red;
+  display: flex;
+  padding: 4px;
+  border-radius: 37px;
+  color: white;
+  right: -7px;
+  top: -5px;
+  cursor: pointer;
+}
+.print {
+  color: white;
+  background-color: green;
+  width: calc(100% - 40px);
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@media print {
+  body * {
+    display: none;
+  }
+  .printablePart * {
+    display: grid;
+  }
+  .delete-button {
+    display: none;
+  }
+  .print {
+    display: none;
+  }
+}
