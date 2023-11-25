@@ -102,6 +102,17 @@ textarea {
   border-color: #d7282f;
 }
 
+.form-container {
+  margin: 0 auto;
+  width: 500px; /* Adjust the width as needed */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
 .groups {
   display: grid;
   grid-template-columns: auto 200px;
