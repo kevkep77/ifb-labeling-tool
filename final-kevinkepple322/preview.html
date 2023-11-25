@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information Grid</title>
+    <!-- Custom css links -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="actions">
+      <div class="left">
+        <label for="">Add <span>New</span> Data</label>
+        <a href="./index.html"><button class="btn addNew">Add</button></a>
+      </div>
+      <div class="middle form-group">
+        <label for="printCount">Need <span>To</span> Print</label>
+        <input type="number" id="printCount" value="20" />
+      </div>
+      <div class="right">
+        <label for="gridPerLine">Per <span>Line</span> Grid</label>
+        <select id="gridPerLine">
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+    <div class="printablePart" id="printablePart">
+      <!-- <div class="info-card">
+        <h2>Product Name</h2>
+        <p>Ingredient; Allergens; Handling;</p>
+        <div class="card-main-info">
+          <div class="card-left">
+            <p>Main Warehouse - 3630 E. Commercial Court, Meridian, ID 83642</p>
+          </div>
+          <div class="card-right">
+            <p>Product Number</p>
+            <p>Repack Date</p>
+            <p>Weight</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <button class="btn print" id="print">Print Datas</button>
+
+    <script src="script/preview.js"></script>
+  </body>
+</html>

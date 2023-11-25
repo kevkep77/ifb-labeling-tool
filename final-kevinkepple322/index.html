@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Online Labeling Tool</title>
+    <!-- Linking custom css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logoHome">
+        <img
+          class="img"
+          src="https://idahofoodbank.org/wp-content/themes/theidahofoodbank/assets/img/TheIdahoFoodbank-logo--horizontal.svg"
+          width="20%"
+          height="10%"
+        />
+      </div>
+
+      <form id="addData" onsubmit="addData(event)">
+        <div class="form-group">
+          <label for="productName">Product Name:</label>
+          <input type="text" id="productName" class="" required />
+        </div>
+
+        <div class="ingredients-section form-group">
+          <label for="ingredients">Ingredients:</label>
+          <textarea id="ingredients" rows="5" required></textarea>
+        </div>
+        <div class="allergens-section form-group">
+          <label for="allergens">Allergens Present:</label>
+          <select id="allergens">
+            <option value="no">No Allergens</option>
+            <option value="Soy">Soy</option>
+            <option value="Fish">Fish</option>
+            <option value="Crustacean">Crustacean</option>
+            <option value="Wheat">Wheat</option>
+            <option value="Peanuts">Peanuts</option>
+            <option value="Sesame">Sesame</option>
+            <option value="Tree Nuts">Tree Nuts</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Eggs">Eggs</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="handlingInstructions">Handling Instructions:</label>
+          <select id="handlingInstructions">
+            <option value="no">None</option>
+            <option value="Keep Frozen">Keep Frozen</option>
+            <option value="Keep Refrigerated">Keep Refrigerated</option>
+            <option value="Store in a Cool, Dry Place">
+              Store in a Cool, Dry Place
+            </option>
+          </select>
+        </div>
+        <div class="right-aligned-fields">
+          <div class="form-group">
+            <label for="productNumber">Product Number:</label>
+            <input type="number" id="productNumber" required />
+          </div>
+          <div class="form-group">
+            <label for="repackDate">Date of Repack:</label>
+            <input type="date" id="repackDate" required />
+          </div>
+          <div class="groups">
+            <div class="form-group">
+              <label for="weight">Weight:</label>
+              <input type="number" id="weightInput" required />
+            </div>
+            <select id="weightSelect" required>
+              <option value="Ounces">Ounces</option>
+              <option value="Pounds">Pounds</option>
+              <option value="Tons">Tons</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="distributorLocation">Distributor Location:</label>
+          <select id="distributorLocation" required>
+            <option
+              value="Main Warehouse - 3630 E. Commercial Court, Meridian, ID 83642"
+            >
+              Main Warehouse - 3630 E. Commercial Court, Meridian, ID 83642
+            </option>
+            <option
+              value="North Central Idaho Branch - 3331 10th St., Lewiston, ID 83501"
+            >
+              North Central Idaho Branch - 3331 10th St., Lewiston, ID 83501
+            </option>
+            <option
+              value="Eastern Idaho Branch - 555 S. First Avenue, Pocatello, ID 83201"
+            >
+              Eastern Idaho Branch - 555 S. First Avenue, Pocatello, ID 83201
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="labelSize">Label Size:</label>
+          <select id="labelSize" required>
+            <option value="">Choose</option>
+            <option value="5160">Avery 5160 (1" x 2 5/8")</option>
+            <option value="5163">Avery 5163 (2" x 4")</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn submit">Add Data</button>
+      </form>
+      <a href="preview.html">
+        <button class="btn btn-preview">Go To Preview</button>
+      </a>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
